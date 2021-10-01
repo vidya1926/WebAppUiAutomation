@@ -17,10 +17,10 @@ public class Login{
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("http://localhost:9001/");
-		driver.findElement(By.xpath("//input[@type='email']")).sendKeys("babu@testleaf.com");
-		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("tester@123");
+		driver.findElement(By.xpath("//span[contains(text(),'use your account')]/following-sibling::input[@type='email']")).sendKeys("babu@testleaf.com");
+		driver.findElement(By.xpath("//span[contains(text(),'use your account')]/following-sibling::input[@type='password']")).sendKeys("tester@123");
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
