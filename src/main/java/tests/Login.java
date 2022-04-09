@@ -16,7 +16,7 @@ public class Login{
 	@Test()
 	public void login() {
 		
-		WebDriverManager.chromeDriver().setup();
+		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();
 		
 		//WebDriverManager.edgedriver().setup();
